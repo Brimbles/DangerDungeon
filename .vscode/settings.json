@@ -1,3 +1,7 @@
 {
     "python.pythonPath": "C:\\Users\\benri\\.virtualenvs\\DangerDungeon-5KtVkIGw\\Scripts\\python.exe"
+    ,"python.linting.pylintArgs":
+    [
+        "--extension-pkg-whitelist=lxml"  // The extension is "lxml" not "1xml"
+    ]
 }
