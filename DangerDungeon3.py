@@ -387,6 +387,7 @@ while not done:
             wounds = 5
             score = 0
             allspritesgroup.empty()
+            # skeletonslist.REmoveidfjsdfjkbsdfkjsdfhskjdhf Skeletons remain after game reset
             # Create a red player block
             player = Player(200, 100, 24, 26)
             allspritesgroup.add(player)
