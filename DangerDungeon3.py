@@ -231,8 +231,8 @@ screen = pygame.display.set_mode((screenwidth, screenheight))
 pygame.display.set_caption("Danger Dungeon")
 clock = pygame.time.Clock()
 
-generalfont = pygame.font.SysFont("monospace", 16)
-gameoverfont = pygame.font.SysFont("monospace", 60)
+generalfont = pygame.font.SysFont("calibri", 16)
+gameoverfont = pygame.font.SysFont("calibri", 60)
 
 ################################### Music & sounds ###############################################
 pygame.mixer.music.load('assets/music.wav')
@@ -387,7 +387,10 @@ while not done:
             wounds = 5
             score = 0
             allspritesgroup.empty()
-            # skeletonslist.REmoveidfjsdfjkbsdfkjsdfhskjdhf Skeletons remain after game reset
+            skeletonspritegroup.empty()
+            skeletonslist.clear()
+        # Add the skeleton to the sprite groups
+            allspritesgroup.add(skeleton)
             # Create a red player block
             player = Player(200, 100, 24, 26)
             allspritesgroup.add(player)
